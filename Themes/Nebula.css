@@ -1,0 +1,345 @@
+/* :root {
+    --pink: hsl(338, 85%, 60%);
+    --yellow: hsl(42, 87%, 71%);
+    --green: hsl(82, 83%, 57%);
+    --teal: hsl(172, 74%, 50%);
+    --blue: hsl(207, 100%, 74%);
+    --purple: hsl(270, 76%, 71%);
+} */
+
+meta {
+    -theme-interface-style: dark;
+    -theme-vibrancy: none;
+    -theme-accent-color: hsb(207, 72%, 100%);
+}
+
+
+/*
+ * Window styles
+ */
+meta.window {
+    background-color: hsl(217, 18%, 14%);
+    border-color: hsb(217, 35%, 25%);
+}
+meta.titlebar {
+    color: hsb(217, 30%, 75%);
+    background: #1c222b;
+    border-color: hsb(217, 35%, 25%);
+}
+meta.titlebar.inactive {
+    color: hsb(217, 30%, 10%);
+    background-color: hsb(217, 25%, 17%);
+}
+
+meta.button {
+    background-color: hsb(217, 33%, 22%);
+    border-color: transparent;
+    color: hsb(217, 25%, 70%);
+}
+
+/* Held down */
+meta.button.highlighted,
+meta.document.button.highlighted {
+	/* Address this later */
+	background-color: hsb(217, 33%, 25%);
+    /* background-color: hsb(217, 60%, 25%); */
+	/* color: hsb(217, 60%, 90%); */
+}
+
+/* "On" */
+meta.button.selected,
+meta.document.button.selected {
+	background-color: hsb(217, 60%, 27%);
+	color: hsb(217, 72%, 100%);
+}
+meta.button.highlighted.selected,
+meta.document.button.highlighted.selected {
+	background-color: hsb(217, 60%, 30%);
+    /* color: white; */
+}
+meta.button.disabled {
+    background-color: hsb(217, 33%, 19%);
+	border-color: transparent;
+	color: hsb(217, 29%, 40%);
+}
+
+meta.textfield {
+    background-color: hsb(217, 35%, 20%);
+    border-color: transparent;
+}
+
+/* Doesn't work */
+/* meta.textfield.active {
+	background-color: red;
+	border-color: red;
+} */
+
+meta.accent {
+    color: hsb(207, 72%, 100%);
+}
+
+/*
+ * Document styles
+ */
+meta.document {
+    background-color: hsl(217, 18%, 14%);
+	border-color: transparent;
+}
+
+meta.document.button {
+    background-color: hsb(217, 33%, 22%);
+	border-color: transparent;
+	color: hsb(217, 25%, 70%);
+}
+meta.document.button.disabled {
+    background-color: hsb(217, 33%, 19%);
+	border-color: transparent;
+	color: hsb(217, 29%, 40%);
+}
+meta.document.button.highlighted {
+    background-color: hsb(217, 33%, 25%);
+}
+
+meta.document.textfield {
+    background-color: hsb(217, 35%, 20%);
+	border-color: transparent;
+}
+
+/* Text */
+meta.text {
+    color: hsb(217, 15%, 90%);
+}
+meta.text.invisible {
+    color: hsb(217, 40%, 30%);
+}
+meta.text.selected {
+	background-color: hsb(217, 40%, 27%);
+}
+
+/* Cursor */
+meta.cursor {
+    background-color: hsb(217, 35%, 20%);
+}
+
+/* Indentation Guides */
+meta.indentguide {
+	border-color: hsb(217, 40%, 30%);
+}
+
+/* Gutter */
+meta.gutter {
+    color:  hsb(217, 32%, 32%);
+}
+meta.gutter.selected {
+    color:  hsb(217, 27%, 62%);
+}
+
+
+/*
+ * Syntax styles
+ */
+
+keyword {
+    color: hsl(207, 100%, 74%);
+}
+comment {
+    color: hsb(217, 32%, 45%);
+}
+processing {
+    color: hsb(210, 20%, 50%);
+}
+declaration {
+    color: hsb(210, 20%, 50%);
+}
+bracket {
+    color: hsb(210, 20%, 52%);
+}
+operator {
+    color: hsl(338, 85%, 60%);
+}
+invalid {
+    background-color: hsb(355, 82%, 96%);
+    color: hsb(60, 3%, 97%);
+}
+link {
+    color: hsb(210, 60%, 100%);
+
+}
+
+/* Values */
+value.boolean {
+    color: hsb(210, 60%, 100%);
+}
+value.null {
+    color: hsb(210, 60%, 100%);
+}
+value.number {
+    color: hsl(270, 76%, 71%);
+}
+value.entity {
+    color: hsb(210, 60%, 100%);
+}
+value.symbol {
+    color: hsb(210, 60%, 100%);
+}
+
+/* Identifiers */
+identifier {
+	color: #fff;
+}
+identifier.type {
+    color: hsb(258, 40%, 87%);
+}
+identifier.constant {
+}
+identifier.global, identifier.variable {
+    color: hsb(268, 34%, 100%);
+}
+identifier.property,
+identifier.decorator,
+identifier.function,
+identifier.method {
+    color: hsl(338, 85%, 60%);
+}
+identifier.key {
+    color: hsb(210, 60%, 100%);
+}
+identifier.argument {
+    color: hsl(42, 87%, 71%)
+	font-style: italic;
+}
+
+/* Strings */
+string {
+    color: hsl(42, 87%, 71%);
+}
+string.key {
+    color: hsb(5, 65%, 100%);
+}
+string-template {
+    color: hsb(27, 60%, 100%);
+}
+string-template.value {
+    color: hsb(27, 72%, 100%);
+}
+regex {
+    color: hsb(40, 72%, 100%);
+}
+regex.escaped {
+    color: hsb(27, 72%, 99%);
+}
+cdata {
+    color: hsb(210, 60%, 100%);
+}
+
+/* Markup */
+markup.heading {
+    color: hsb(30, 50%, 80%);
+}
+markup.line {
+    color: hsb(60, 50%, 75%);
+}
+markup.bold {
+    color: hsb(196, 60%, 76%);
+    font-weight: bold;
+}
+markup.italic {
+    color: hsb(94, 40%, 80%);
+    font-style: italic;
+}
+markup.strikethrough {
+    color: hsb(0, 60%, 100%);
+}
+markup.list.item {
+    color: hsb(30, 50%, 80%);
+}
+markup.code {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+/* Types */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+    font-weight: bold;
+    color: hsb(258, 40%, 87%);
+}
+
+/* Members */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+    color: hsb(210, 10%, 100%);
+}
+
+/* Tags */
+tag {
+    color: hsb(166, 40%, 78%);
+}
+tag.framework {
+    color: hsb(258, 40%, 87%);
+}
+tag.attribute.name {
+    color: hsb(95, 54%, 82%);
+}
+tag.attribute.value {
+    color: hsl(42, 87%, 71%);
+}
+tag.attribute.value.link {
+    color: hsb(210, 60%, 100%);
+}
+
+/* Styles */
+style.at {
+    color: hsb(25, 75%, 100%);
+}
+style.selector {
+	color: hsl(82, 83%, 57%);
+}
+style.attribute.name,
+scss.attribute.name {
+	color: hsl(207, 100%, 74%);
+}
+
+/* Custom */
+/* javascript.keyword {
+	color: hsl(270, 76%, 71%);
+} */
+
+javascript.block {
+	color: hsb(217, 27%, 59%);
+}
+
+javascript.definition.function {
+	color: hsl(207, 100%, 74%);
+}
+javascript.definition.function.anonymous {
+	color: hsl(338, 85%, 60%);
+}
+/* javascript.identifier {
+	color: hsl(82, 83%, 57%);
+} */
+javascript.identifier.method {
+	color: hsl(338, 85%, 60%);
+}
+javascript.identifier.name {
+	color: #fff;
+}
+javascript.identifier.argument {
+	color: hsl(42, 86%, 81%);
+}
+
+html.tag {
+	color: hsb(217, 32%, 45%);
+}
+
+html.tag.name {
+	color: hsl(338, 85%, 60%);
+}
+
+tag.attribute.name {
+	color: hsl(82, 83%, 57%);
+}
