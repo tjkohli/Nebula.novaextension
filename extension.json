@@ -1,9 +1,9 @@
 {
     "identifier": "tjkohli.Nebula",
     "name": "Nebula",
-    "vendor": "TJ Kohli",
+    "organization": "TJ Kohli",
     "description": "A beautifully minimal and carefully-designed Nova theme with vibrant syntax colors.",
-    "version": "0.9.0-beta",
+    "version": "0.9.0",
     "bugs": "https://github.com/tjkohli/Nebula.novaextension/issues",
     "repository": "https://github.com/tjkohli/Nebula.novaextension",
     "keywords": ["minimal", "dark", "colorful"],
