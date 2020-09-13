@@ -4,5 +4,6 @@
     "organization": "TJ Kohli",
     "description": "A beautifully minimal and carefully-designed Nova theme with vibrant syntax colors.",
     "version": "0.9.0-beta",
-    "categories": ["themes"]
+    "categories": ["themes"],
+    "issues": "https://github.com/tjkohli/Nebula.novaextension/issues"
 }
